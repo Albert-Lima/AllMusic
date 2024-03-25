@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+:root{
+    --cor-principal: #4F143B;
+    --cor-secundária: #0F000A;
+    --cor-destaque: #144F44;
+}
+body{
+    background-image: linear-gradient( to top, var(--cor-destaque), var(--cor-principal));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Conteudo{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    max-width: 300px;
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(20px);
+    padding-bottom: 20px;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-left: 3%;
+    margin-top: 20px;
+}
+.textbox{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 94%;
+    margin-left: 3%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    width: 213px;
+    padding-left: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+}
+input[type="password"]{
+    background-color: transparent;
+    width: 213px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    color: white;
+}
+.icone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.Img{
+    height: 20px;
+}
+button{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 50px;
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#009176;
+    transition: 1s;
+}
+#confirm{
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    margin-left: 3%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#SalvarSenha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
+}
+#checkbox{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#checkbox img{
+    display: none;
+    width: 15px;
+}
+#SalvarSenha p{
+    margin-left: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(148, 148, 148);
+    transition: 0.2s;
+}

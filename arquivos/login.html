@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section id="Conteudo">
+        <div id="top">
+            <h1>LOGO</h1>
+            <h1>Login</h1>
+        </div>  
+        <form action="post">
+            <div class="textbox">
+                <div class="icone">
+                    <img src="imagens/icone-usuário.png" alt="" class="Img">
+                </div>
+                <input type="text" name="username" id="" autocomplete="off" required placeholder="USERNAME">
+            </div>
+            
+            <div class="textbox">
+                <div class="icone">
+                    <img src="imagens/icone-senha.png" alt="" class="Img">
+                </div>
+                <input type="password" id="password" autocomplete="off" required placeholder="Password">
+            </div>
+
+            <button>Enviar</button>
+            <div id="confirm">
+                <div id="SalvarSenha">
+                    <div id="checkbox">
+                        <img src="imagens/senha-salva.png" alt="" id="ImgCheck">
+                    </div>
+                    <p>Remember me</p>
+                </div>
+                <a href="#">forgot your password?</a>
+            </div>
+        </form>
+        <div id="linha"></div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
